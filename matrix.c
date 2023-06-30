@@ -14,7 +14,7 @@ void printMatrix(int matrix[ROWS][COLS]) {
     }
     printf("\n");
   }
-  printf("}\n");
+  printf("\n");
 }
 
 

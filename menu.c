@@ -1,11 +1,10 @@
-#include <stdio.h>
-#include "matrix.h"
+#include "menu.h"
 
 /*print the menu option*/
 
 void menu(){
 
-    char *menuOptions []= {"Add object", "Add lighting", "render"};
+    char *menuOptions []= {"Add object", "Add lighting", "render screen"};
 
     int length = sizeof(menuOptions)/ sizeof(menuOptions[0]);
    
@@ -37,6 +36,7 @@ void menu(){
 
         case 3:
             /*implement render.c*/
+            createScreen();
             break;
             
         default:

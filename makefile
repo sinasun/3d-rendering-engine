@@ -1,11 +1,14 @@
 CC= gcc
-CC_FLAGS=  -g -pedantic -W -Wall -lm
-FILES= menu.c main.c matrix.c
+CC_FLAGS=  -g -pedantic -W -Wall 
+
+LDFLAGS = -lm -lSDL2
+
+FILES= menu.c main.c matrix.c render_screen.c
  
 OUT_EXE = render
 
 build: $(FILES)
-	$(CC)  $(FILES) -o $(OUT_EXE) $(CC_FLAGS) 
+	$(CC) $(CC_FLAGS)  $(FILES) -o $(OUT_EXE) $(LDFLAGS)
 
 
 clean: rm -r *.o core  *~

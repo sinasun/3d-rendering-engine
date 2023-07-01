@@ -11,10 +11,8 @@ void printMatrix(int matrix[ROWS][COLS]) {
   printf("\n");
 }
 
-
 void matrixMultiplication(int firstMatrix[][COLS], int secondMatrix[][COLS],
                           int resultMatrix[][COLS]) {
-
   for (int i = 0; i < ROWS; i++) {
     for (int j = 0; j < COLS; j++) {
       for (int k = 0; k < COLS; k++) {
@@ -22,7 +20,6 @@ void matrixMultiplication(int firstMatrix[][COLS], int secondMatrix[][COLS],
       }
     }
   }
-
 }
 
 void matrices(int a, int b, int c) {
@@ -32,12 +29,11 @@ void matrices(int a, int b, int c) {
 
   int z[ROWS][COLS] = {{cos(c), -sin(c), 0}, {sin(c), cos(c), 0}, {0, 0, 1}};
 
-// store the result
-  int result[ROWS][COLS]; 
-  
+  // store the result
+  int result[ROWS][COLS];
+
   matrixMultiplication(x, y, result);
   matrixMultiplication(result, z, result);
 
   printMatrix(result);
 }
-

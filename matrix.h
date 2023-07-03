@@ -9,8 +9,9 @@
 #define ROWS 3
 #define COLS 3
 
-void matrixMultiplication(int firstMatrix[][COLS], int secondMatrix[][COLS], int resultMatrix[][COLS]);
-void matrices(int a, int b, int c);
-void printMatrix(int matrix[ROWS][COLS]);
+void matrixMultiplication(float firstMatrix[][COLS], float secondMatrix[][COLS],
+                          float resultMatrix[][COLS]);
+void matrices(float a, float b, float c);
+void printMatrix(float matrix[ROWS][COLS]);
 
 #endif

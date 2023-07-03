@@ -4,7 +4,11 @@
 #include "render_screen.h"
 #include <stdio.h>
 #include "matrix.h"
+#include <math.h>
 
-void menu();
+
+int menu();
+float degreeToRad(float degree);
+int getDegree();
 
 #endif

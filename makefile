@@ -1,7 +1,7 @@
 CC= gcc
 CC_FLAGS=  -g -pedantic -W -Wall 
 
-LDFLAGS = -lm -lSDL2
+LDFLAGS = -lm -lSDL2 -lvulkan -lX11
 
 FILES= menu.c main.c matrix.c render_screen.c
  

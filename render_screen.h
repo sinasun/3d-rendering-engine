@@ -6,6 +6,8 @@
 #include <stdbool.h>
 
 int createScreen();
-
+void drawPoints(SDL_Renderer *renderer, SDL_Window *screen, int pointX,
+                int pointY);
+int handleInputs(SDL_Window * screen);
 
 #endif

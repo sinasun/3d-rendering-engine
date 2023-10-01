@@ -1,8 +1,10 @@
 #include <stdio.h>
-#include "main.h"
 
-int main(){
+#include "menu.h"
+#include "matrix.h"
 
+int main()
+{
     menu();
 
     return 1;
